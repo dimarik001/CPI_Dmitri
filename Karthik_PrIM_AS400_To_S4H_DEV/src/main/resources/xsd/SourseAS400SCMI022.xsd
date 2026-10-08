@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!-- Root element -->
+	<xs:element name="Record">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- TrsInv can occur multiple times -->
+				<xs:element name="TrsInv" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CMPNO" type="xs:string" minOccurs="0"/>
+							<xs:element name="DBATCH" type="xs:string" minOccurs="0"/>
+							<xs:element name="DSEQ" type="xs:string" minOccurs="0"/>
+							<xs:element name="DDTTR" type="xs:string" minOccurs="0"/>
+							<xs:element name="DTYPET" type="xs:string" minOccurs="0"/>
+							<!-- XREF Inventory Movement Type -->
+							<xs:element name="XREF_InventoryMovementType" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="SapMovementCode" type="xs:string" minOccurs="0"/>
+										<xs:element name="SapIncludeProdCost" type="xs:string" minOccurs="0"/>
+										<xs:element name="IsActiveEntity" type="xs:string" minOccurs="0"/>
+										<xs:element name="LegBlockStockIndicator" type="xs:string" minOccurs="0"/>
+										<xs:element name="SapGoodsmvntCode" type="xs:string" minOccurs="0"/>
+										<xs:element name="SapItemText" type="xs:string" minOccurs="0"/>
+										<xs:element name="SapStockType" type="xs:string" minOccurs="0"/>
+										<xs:element name="Inactive" type="xs:string" minOccurs="0"/>
+										<xs:element name="LegTransaction" type="xs:string" minOccurs="0"/>
+										<xs:element name="LegQuantitySign" type="xs:string" minOccurs="0"/>
+										<xs:element name="SapReasonMovement" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="DDTPRD" type="xs:string" minOccurs="0"/>
+							<xs:element name="TAB16" type="xs:string" minOccurs="0"/>
+							<xs:element name="PMSLF" type="xs:string" minOccurs="0"/>
+							<xs:element name="DUSIGE" type="xs:string" minOccurs="0"/>
+							<xs:element name="DENTAF" type="xs:string" minOccurs="0"/>
+							<xs:element name="DENTEX" type="xs:string" minOccurs="0"/>
+							<xs:element name="DPROD" type="xs:string" minOccurs="0"/>
+							<!-- Product -->
+							<xs:element name="A_ProductType" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Product" type="xs:string" minOccurs="0"/>
+										<xs:element name="A_ProductUnitsOfMeasureType" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="GlobalTradeItemNumberCategory" type="xs:string" minOccurs="0"/>
+													<xs:element name="Product" type="xs:string" minOccurs="0"/>
+													<xs:element name="AlternativeUnit" type="xs:string" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ProductOldID" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="DTOTCA" type="xs:string" minOccurs="0"/>
+							<xs:element name="DTPOID" type="xs:string" minOccurs="0"/>
+							<!-- Catch Weight Relevant -->
+							<xs:element name="XREF_CatchWeightRelavantType" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CatchWeightRelavant" type="xs:string" minOccurs="0"/>
+										<xs:element name="Matnr" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="UTMES" type="xs:string" minOccurs="0"/>
+							<xs:element name="DDTTRA" type="xs:string" minOccurs="0"/>
+							<xs:element name="COUTPRD" type="xs:string" minOccurs="0"/>
+							<xs:element name="FLGBLCK" type="xs:string" minOccurs="0"/>
+							<xs:element name="FLGQ" type="xs:string" minOccurs="0"/>
+							<xs:element name="FLGBLCKAF" type="xs:string" minOccurs="0"/>
+							<xs:element name="FLGBLCKEX" type="xs:string" minOccurs="0"/>
+							<xs:element name="LEG_BLOCK_STOCK_INDICATOR" type="xs:string" minOccurs="0"/>
+							<!-- Storage Location -->
+							<xs:element name="XREF_StorageLocationMvtType" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="IsActiveEntity" type="xs:string" minOccurs="0"/>
+										<xs:element name="SapStorageLoc" type="xs:string" minOccurs="0"/>
+										<xs:element name="LegPlant" type="xs:string" minOccurs="0"/>
+										<xs:element name="LegSystem" type="xs:string" minOccurs="0"/>
+										<xs:element name="LegCompany" type="xs:string" minOccurs="0"/>
+										<xs:element name="Inactive" type="xs:string" minOccurs="0"/>
+										<xs:element name="LegHouse" type="xs:string" minOccurs="0"/>
+										<xs:element name="SapPlant" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<!-- ProductBatch -->
+							<xs:element name="ProductBatch" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="CustomerDate" type="xs:string" minOccurs="0"/>
+										<xs:element name="SignificantDate" type="xs:string" minOccurs="0"/>
+										<xs:element name="BatchID" type="xs:string" minOccurs="0"/>
+										<xs:element name="Product" type="xs:string" minOccurs="0"/>
+										<xs:element name="Lifespan" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

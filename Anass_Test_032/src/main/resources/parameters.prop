@@ -1,0 +1,49 @@
+#Thu Jul 16 22:32:17 UTC 2026
+API_Address=http\://ds2.olymel.com\:443/sap/opu/odata/sap/API_BUSINESS_PARTNER/
+Address_Product=http\://ds2.olymel.com\:443/sap/opu/odata/sap/API_PRODUCT_SRV
+Address_ProductCharac=http\://ds2.olymel.com\:443/sap/opu/odata/sap/API_CLFN_PRODUCT_SRV
+Address_charac=http\://ds2.olymel.com\:443/sap/opu/odata/sap/API_CLFN_CHARACTERISTIC_SRV
+Authentication=Basic
+CallAddress=Common_Mail
+Client=sap-client\=220
+Credential\ Name=BasicAuth_S4H_DS2CLNT220_BTP_CPIUSER
+Credentials=BasicAuth_S4H_DS2CLNT220_BTP_CPIUSER
+Custom\ Query\ Parameters=sap-client\=220
+Date=2024-06-07T00\:00\:00
+DateTime=20240607020202
+ECC\ Client=050
+ECC\ Pintys\ Port=443
+ECC\ Pintys\ URL=qa.pintys.com
+EXCEPTIONLEVEL=HIGH
+Exception_JMS=Global_ErrorQueue
+HTTPAddress=http\://as400.otc.dev.olymel.com\:80/web/services/PTPI019
+Location\ ID=olymel-non-prod
+LocationID=sap-non-prod
+OCTOPUS=PD-OCTOPUS
+OCT_categoryID=337
+OCT_groupID=89
+OCT_impactID=79
+OCT_priorityID=3
+OCT_relatedConfigurationItemID=101827
+OCT_urgencyID=5
+Odata\ Address=http\://ds2.olymel.com\:443/sap/opu/odata4/sap/zca0_xref_api/srvd/sap/zca0_xref_service/0001
+OlymelLocation=olymel-non-prod
+PINTYs\ Credentials=BasicAuth_ECC_DEVCLNT050_BTP_CPIUSER
+Persistence=FALSE
+Proxy\ Type=sapcc
+Query=
+RFCDest=S4_Dev_RFC
+RestAddress=http\://ds2.olymel.com\:443/sap/bc/rest/ZBTPCPI_REST/ZPTP0_E_002
+RestTimeOut=60000
+S4\ Location\ ID=sap-non-prod
+S4_Dev_RFC=
+SAP\ SID=DS2
+Scheduler=<row><cell>dateType</cell><cell></cell></row><row><cell>timeType</cell><cell></cell></row><row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>onWeekly</cell><cell></cell></row><row><cell>onMonthly</cell><cell></cell></row><row><cell>OnEveryMinute</cell><cell></cell></row><row><cell>fromInterval</cell><cell></cell></row><row><cell>toInterval</cell><cell></cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>triggerType</cell><cell>simple</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>fireNow\=true</cell></row>
+Timeout=10
+TimeoutLawson=60000
+attachmentName=ECCpayload
+enableLogging=true
+exceptionEmail=TRUE
+property.VFileName=
+restClient=sap-client\=220
+{{Proxy\ Type=sapcc

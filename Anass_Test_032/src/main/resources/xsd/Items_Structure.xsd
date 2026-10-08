@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <!-- ========================================================= -->
+    <!-- EDI_DC40 control-record type                              -->
+    <!-- ========================================================= -->
+    <xs:complexType name="EDI_DC40Type">
+        <xs:sequence>
+
+            <xs:element name="TABNAM"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="MANDT"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="DOCNUM"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="DOCREL"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="STATUS"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="DIRECT"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="OUTMOD"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="EXPRSS"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="TEST"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="IDOCTYP"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="CIMTYP"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="MESTYP"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="MESCOD"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="MESFCT"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="STD"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="STDVRS"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="STDMES"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="SNDPOR"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="SNDPRT"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="SNDPFC"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="SNDPRN"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="SNDSAD"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="SNDLAD"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="RCVPOR"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="RCVPRT"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="RCVPFC"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="RCVPRN"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="RCVSAD"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="RCVLAD"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="CREDAT"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="CRETIM"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="REFINT"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="REFGRP"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="REFMES"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="ARCKEY"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+            <xs:element name="SERIAL"
+                        type="xs:string"
+                        minOccurs="0"/>
+
+        </xs:sequence>
+
+        <xs:attribute name="SEGMENT"
+                      type="xs:string"
+                      use="optional"/>
+    </xs:complexType>
+
+    <!-- ========================================================= -->
+    <!-- Main intermediate structure                               -->
+    <!-- ========================================================= -->
+    <xs:element name="Items">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="Item"
+                            minOccurs="0"
+                            maxOccurs="unbounded">
+
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <!-- IDoc control segment copied to each item -->
+                            <xs:element name="EDI_DC40"
+                                        type="EDI_DC40Type"
+                                        minOccurs="0"/>
+
+                            <!-- Header fields -->
+                            <xs:element name="PSTNG_DATE"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="DOC_DATE"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="REF_DOC_NO"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="GM_CODE"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <!-- Standard item fields -->
+                            <xs:element name="MATERIAL"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="PLANT"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="STGE_LOC"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="BATCH"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="MOVE_TYPE"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="ENTRY_QNT"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="ENTRY_UOM"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="ENTRY_UOM_ISO"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="EXPIRYDATE"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="PROD_DATE"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <!-- Catch-weight fields -->
+                            <xs:element name="MATDOC_ITM"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="QUANTITY_PME"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="BASE_UOM_PME"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="ENTRY_QNT_PME"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                            <xs:element name="ENTRY_UOM_PME"
+                                        type="xs:string"
+                                        minOccurs="0"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Thu Oct 08 18:40:47 UTC 2026
+description=This integration is to material master data from S4H to ECC PINTY's system.
+source=SAP S/4HANA
+target=SAP ECC PINTY'S

@@ -1,0 +1,1 @@
+{"queueDefinitions":[{"name":"Global_ErrorQueue","producer":true,"consumer":false,"maxDeliverdUnackedMsgsPerFlow":1},{"name":"E.Global_ErrorQueue","producer":true,"consumer":true,"maxDeliverdUnackedMsgsPerFlow":0},{"name":"C.Global_ErrorQueue","producer":true,"consumer":true,"maxDeliverdUnackedMsgsPerFlow":0}]}

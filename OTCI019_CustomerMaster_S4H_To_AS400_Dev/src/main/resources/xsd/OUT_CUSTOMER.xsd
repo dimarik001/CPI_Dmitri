@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="Customers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Customer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="SAPCUSNO" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CMPNO" type="xs:string"/>
+                            <xs:element minOccurs="0" name="ACTIV" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPGRPKY" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPNBRNG" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPFROMN" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPTON" type="xs:string"/>
+                            <xs:element minOccurs="0" name="TYPETR" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CUSNO" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CNAME" type="xs:string"/>
+                            <xs:element minOccurs="0" name="NOMSU" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CADD1" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CADD2" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CADDX" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CADD3" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CZIPC" type="xs:string"/>
+                            <xs:element minOccurs="0" name="BLLCS" type="xs:string"/>
+                            <xs:element minOccurs="0" name="DIVSN" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CCRCD" type="xs:string"/>
+                            <xs:element minOccurs="0" name="VILLE" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CXSUB" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPDTCRT" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPHRCRT" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPUSER" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPDTMOD" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SAPHRMOD" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CTERR1" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SECAC" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CLASM" type="xs:string"/>
+                            <xs:element minOccurs="0" name="SALNO" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CXT08" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CXBANN" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CTX11" type="xs:string"/>
+                            <xs:element minOccurs="0" name="NOREG" type="xs:string"/>
+                            <xs:element minOccurs="0" name="NOSREG" type="xs:string"/>
+                            <xs:element minOccurs="0" name="MAGAS" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CATALG" type="xs:string"/>
+                            <xs:element minOccurs="0" name="CPALET" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

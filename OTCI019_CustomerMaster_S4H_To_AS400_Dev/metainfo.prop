@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Thu Oct 08 18:36:56 UTC 2026
+description=This integration is to replicate material master data from S4H to AS400 systems.
+source=SAP S/4HANA
+target=AS400 OLYMEL - LAWSON

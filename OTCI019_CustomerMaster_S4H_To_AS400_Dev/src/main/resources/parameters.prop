@@ -1,0 +1,75 @@
+#
+#Thu Oct 08 18:36:56 UTC 2026
+101827=
+2=2
+3=3
+337=337
+5=5
+79=79
+API_Address=http\://ds2.olymel.com\:443/sap/opu/odata/sap/API_BUSINESS_PARTNER/
+AggregationAlgorithm=xmlLookupAggregation
+Allow\ Chunking=true
+Allow\ ChunkingV4=false
+Authentication=Basic
+BUSINESS_PARTNER=API_BUSINESS_PARTNER
+Backoff=1
+CSRF\ Protected=true
+CallAddress=Common_Mail
+Client=sap-client\=220
+CompressStoredMessage=1
+Cred\ Name=BasicAuth_S4H_DS2CLNT220_BTP_CPIUSER
+Credentials=BasicAuth_S4H_DS2CLNT220_BTP_CPIUSER
+Custom\ Query=sap-client\=220
+Date=2024-06-07T00\:00\:00
+DateTime=20240607020202
+EXCEPTIONLEVEL=HIGH
+EncryptStoredMessage=1
+Expiration\ Period=30
+ExpirationPeriod=30
+HTTPAddress=http\://as400.phase2.dev.olymel.com\:80/web/services/OTCI019
+KeyElement=KUNNR
+KeyElementCustomer=RelationshipCategory
+KeyElementPartn=Customer
+KeyElementPartner=BusinessPartner
+Location\ ID=sap-non-prod
+LocationID=sap-non-prod
+Maximum\ Rerty=60
+Number\ of\ Processes=1
+OCT_categoryID=337
+OCT_groupID=89
+OCT_impactID=79
+OCT_priorityID=3
+OCT_relatedConfigurationItemID=101827
+OCT_urgencyID=5
+OData_S4Material=
+OTC=101827
+OlymelLocation=olymel-non-prod
+Path_to_Node=/DEBMAS07/IDOC/E1KNA1M
+Path_to_NodeCustomer=/A_BPRelationship/A_BPRelationshipType
+Path_to_NodePartner=/A_BusinessPartner/A_BusinessPartnerType
+Persistence=FALSE
+Proxy\ Type=sapcc
+Query=
+Queue\ Name\ Receiver=OTCI019_CustomerMaster_Dev
+QueueName=Global_ErrorQueue
+RFCDest=S4_Dev_RFC
+ReferenceType=static
+Rerty\ in\ min=10
+RestAddress=http\://ds2.olymel.com\:443/sap/bc/rest/ZBTPCPI_REST/ZPTP0_E_002
+RestTimeOut=60000
+Retenition\ Alerting=4
+RetenitionThreshold=4
+Reuse\ Connection=true
+S4HANA\ Host=ds2.olymel.com
+S4HANA\ Port=443
+S4_Dev_RFC=
+SAP\ SID=DS2
+Scheduler=<row><cell>dateType</cell><cell></cell></row><row><cell>timeType</cell><cell></cell></row><row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>onWeekly</cell><cell></cell></row><row><cell>onMonthly</cell><cell></cell></row><row><cell>OnEveryMinute</cell><cell></cell></row><row><cell>fromInterval</cell><cell></cell></row><row><cell>toInterval</cell><cell></cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>triggerType</cell><cell>simple</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>fireNow\=true</cell></row>
+Timeout=1
+TimeoutLawson=60000
+TransferExchangeProperties=1
+exceptionEmail=TRUE
+property.VFileName=
+restClient=sap-client\=220
+xRef_SalesSectorCode=zca0_xref_api/srvd/sap/zca0_xref_service/0001
+xRef_SectorCode_CustCatalog_CompanyCode_ClientRegion=zca0_xref_api/srvd/sap/zca0_xref_service/0001
